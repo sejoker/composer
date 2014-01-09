@@ -4,7 +4,7 @@
   "keywords"      : ["composer", "reactjs", "turbo-react"],
   "repo"          : "turbo-react/composer",
   "main"          : "composer.js",
-  "scripts"       : ["composer.js","isEqual.js","ComposerMixin.js"],
+  "scripts"       : ["composer.js","isEqual.js"],
   "version"       : "0.1.0",
   "license"       : "MIT"
 }

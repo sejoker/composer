@@ -71,4 +71,12 @@ module.exports = function(app){
   }
   return app;
 }
-module.exports.mixin = require('./ComposerMixin');
+
+module.exports.mixin = { 
+  componentWillMount: function() {
+    module.exports(this);
+  },
+  insert: function(){
+    return this.compose.apply(this, arguments);
+  }
+}
