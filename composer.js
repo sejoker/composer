@@ -2,7 +2,7 @@ var cache = {};
 var toString = Object.prototype.toString;
 
 // refactor to drop dependencies
-var isEqual = _.isEqual;
+var isEqual = require('./isEqual');
 
 function dispose(inst){
   if(inst && inst.dispose) return inst.dispose.call(this);
@@ -71,3 +71,4 @@ module.exports = function(app){
   }
   return app;
 }
+module.exports.mixin = require('./ComposerMixin');

@@ -1,0 +1,10 @@
+{
+  "name"          : "composer",
+  "description"   : "Javascript composer library. Singleton generator.",
+  "keywords"      : ["composer", "reactjs", "turbo-react"],
+  "repo"          : "turbo-react/composer",
+  "main"          : "composer.js",
+  "scripts"       : ["composer.js","isEqual.js","ComposerMixin.js"],
+  "version"       : "0.1.0",
+  "license"       : "MIT"
+}
