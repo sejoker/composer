@@ -64,7 +64,9 @@ module.exports = function(app){
       }
       if(constr == Object(constr) || toString.call(constr) == '[object String]'){
         // trigger new
-        cache[name].inst = constr;
+        cache[name] = {
+          inst: constr
+        }
         return constr;
       }
     }
