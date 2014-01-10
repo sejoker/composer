@@ -46,12 +46,12 @@ module.exports = function(app){
       }
 
       if(constr == Object(constr) || toString.call(constr) == '[object String]'){
-        if(isEqual(cache[name].constr, constr)){
-          return cache[name].constr;
+        if(isEqual(cache[name].inst, constr)){
+          return cache[name].inst;
         }
-        cache[name].constr = constr;
+        cache[name].inst = constr;
         // trigger after update
-        return constr;
+        return cache[name].inst;
       }
     } else {
       if(toString.call(constr) == '[object Function]'){
