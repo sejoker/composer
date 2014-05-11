@@ -1,3 +1,5 @@
+  // Create quick reference variable for speed access to core prototypes
+  var toString = Object.prototype.toString;
   // Perform a deep comparison to check if two objects are equal.
   module.exports = function(a, b) {
     return eq(a, b, [], []);
